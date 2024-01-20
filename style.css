@@ -42,8 +42,8 @@ div#video img {
 /* Styles for mobile devices when the 'revealed' class is present */
 @media only screen and (max-width: 600px) {
   div#video.revealed img {
-    width: 80%; /* Adjust the width for small screens after reveal */
-    height: 120%; /* Adjust the height for small screens after reveal */
+    width: 150%; /* Adjust the width for small screens after reveal */
+    height: 170%; /* Adjust the height for small screens after reveal */
   }
 }
 
