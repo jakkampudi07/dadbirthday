@@ -279,7 +279,6 @@ window.onload = function () {
   init();
 
 };
-
 function reveal() {
   // Make the background of the element with class 'merrywrap' transparent
   document.querySelector('.merrywrap').style.backgroundColor = 'transparent';
@@ -291,20 +290,27 @@ function reveal() {
   var img = document.createElement("img");
 
   // Set the source attribute of the image to the URL of your image file
-  img.setAttribute("src", "dad.jpg"); // Replace "path/to/your/image.jpg" with the actual path to your image file
+  img.setAttribute("src", "C:/Users/jakka/Downloads/Birthday/Birthday/dad.jpg");
 
-  // Set styles for the image
+  // Set different styles for the image based on the window width
   var w, h;
   if (window.innerWidth >= 1000) {
     w = 295;
     h = 185;
+  } else if (window.innerWidth >= 600) {
+    w = 200; // Adjust the width for medium-sized screens
+    h = 300; // Adjust the height for medium-sized screens
   } else {
-    w = 255;
-    h = 155;
+    w = 150; // Adjust the width for small screens
+    h = 250; // Adjust the height for small screens
   }
-  img.style.width = `${500}px`;
-  img.style.height = `${350}px`;
+  img.style.width = `${w}px`;
+  img.style.height = `${h}px`;
 
   // Append the image to the element with id 'video'
-  document.querySelector('#video').appendChild(img);
+  var videoContainer = document.querySelector('#video');
+  videoContainer.appendChild(img);
+
+  // Add a class to the video container after the reveal
+  videoContainer.classList.add('revealed');
 }
