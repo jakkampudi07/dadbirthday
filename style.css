@@ -31,13 +31,23 @@ div#beach {
 div#video {
   position: absolute;
   right: 243px;
-  bottom: 100px;
+  bottom: 200px;
 }
 
 div#video img {
-  width: 255px;
-  height: 155px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
+/* Styles for mobile devices when the 'revealed' class is present */
+@media only screen and (max-width: 600px) {
+  div#video.revealed img {
+    width: 80%; /* Adjust the width for small screens after reveal */
+    height: 120%; /* Adjust the height for small screens after reveal */
+  }
+}
+
+
 
 #people {
   position: absolute;
