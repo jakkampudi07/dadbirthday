@@ -304,8 +304,8 @@ function reveal() {
     w = 150; // Adjust the width for small screens
     h = 250; // Adjust the height for small screens
   }
-  img.style.width = `${w}px`;
-  img.style.height = `${h}px`;
+  img.style.width = `${200}px`;
+  img.style.height = `${400}px`;
 
   // Append the image to the element with id 'video'
   var videoContainer = document.querySelector('#video');
