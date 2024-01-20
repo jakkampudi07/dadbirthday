@@ -451,16 +451,26 @@ div#sea {
   div#beach {
     background-size: 2000px;
   }
-
   div#video {
-    right: 290px;
-    bottom: 235px;
-  }
+  position: absolute;
+  right: 243px;
+  bottom: 200px;
+}
 
-  div#video iframe {
-    width: 295px;
-    height: 185px;
+div#video img {
+  width: 100%; /* Make the image fill the container */
+  height: 100%; /* Make the image fill the container */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+
+/* Styles for mobile devices when the 'revealed' class is present */
+@media only screen and (max-width: 600px) {
+  div#video.revealed img {
+    width: 80%; /* Adjust the width for small screens after reveal */
+    height: 120%; /* Adjust the height for small screens after reveal */
   }
+}
+
 
   .moon {
     right: 230px;
