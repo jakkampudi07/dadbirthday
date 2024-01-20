@@ -290,7 +290,7 @@ function reveal() {
   var img = document.createElement("img");
 
   // Set the source attribute of the image to the URL of your image file
-  img.setAttribute("src", "C:/Users/jakka/Downloads/Birthday/Birthday/dad.jpg");
+  img.setAttribute("src", "dad.jpg");
 
   // Set different styles for the image based on the window width
   var w, h;
