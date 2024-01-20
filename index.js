@@ -296,12 +296,12 @@ function reveal() {
   var w, h;
   if (window.innerWidth >= 1000) {
     w = 295;
-    h = 185;
+    h = 285;
   } else if (window.innerWidth >= 600) {
-    w = 200; // Adjust the width for medium-sized screens
+    w = 300; // Adjust the width for medium-sized screens
     h = 300; // Adjust the height for medium-sized screens
   } else {
-    w = 150; // Adjust the width for small screens
+    w = 250; // Adjust the width for small screens
     h = 250; // Adjust the height for small screens
   }
   img.style.width = `${200}px`;
