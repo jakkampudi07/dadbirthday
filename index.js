@@ -291,7 +291,7 @@ function reveal() {
   var img = document.createElement("img");
 
   // Set the source attribute of the image to the URL of your image file
-  img.setAttribute("src", "C:/Users/jakka/Downloads/Birthday/Birthday/dad.jpg"); // Replace "path/to/your/image.jpg" with the actual path to your image file
+  img.setAttribute("src", "dad.jpg"); // Replace "path/to/your/image.jpg" with the actual path to your image file
 
   // Set styles for the image
   var w, h;
